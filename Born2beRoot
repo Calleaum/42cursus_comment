@@ -1,0 +1,45 @@
+lsblk 
+Secure Shell (SSH)
+ufw Uncomplicated Firewall interface simplifiée pour gérer les règles de pare-feu 
+debian est un système d'exploitation libre
+AppArmor est un Système de sécurité Linux qui est déjà inclu dans debian 
+lvm est un gestionnaire de volumes logiques
+
+Sudo hostname "new name"
+se deconnecter : logout
+
+nano /usr/local/bin/monitoring.sh
+sudo crontab -u root -e
+cron est un utilitaire qui permet d'executer des commandes a des temps specifique 
+
+sudo ufw status
+sudo ufw allow 4242
+sudo ufw delete allow 42422
+
+sudo systemctl status ssh
+sudo grep Port /etc/ssh/sshd_config
+ssh lsellier@ hostname -I -p 4242
+sudo systemctl restart ss
+
+getent group sudo
+getent group user42
+
+sudo adduser jsp
+sudo groupadd supercorrecteur
+sudo getent group supercorrecteur
+groups jsp 
+sudo usermod -aG supercorrecteur jsp
+sudo deluser jsp supercorrecteur
+
+sudo chage -l jsp
+sudo nano /etc/login.defs
+sudo nano /etc/pam.d/common-password
+
+hostnamectl 
+sudo hostnamectl set-hostname connard42
+sudo nano /etc/hosts
+
+dpkg -l | grep sudo 
+sudo nano /var/log/sudo/sudo.log
+sudo visudo
+sudo nano /etc/sudoers
