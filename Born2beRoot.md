@@ -6,7 +6,7 @@ Apparmor = Module de securite de Linux (Chaque processus peut avoir son profil d
 lvm = Gestionnaire de volume physique
 Cron utilitaire pour executer des commandes dans des temps specifique 
 
-		</b>Partitions :</b>
+		Partitions :
 lsblk
 
 		Commandes UFW :
