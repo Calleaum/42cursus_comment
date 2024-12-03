@@ -39,7 +39,7 @@ ssh calleaum42@ hostname -I -p 4242
 sudo hostnamectl set-hostname new_user  
 change hostname  
 
-sudo nano /etc/hostname  et /etc/hosts  	
+sudo nano /etc/hostname  et /etc/hosts  
 Possibilite de changer manuellement  
 		
 		Monitoring :
