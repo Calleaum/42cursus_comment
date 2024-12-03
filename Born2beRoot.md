@@ -1,7 +1,9 @@
 Partitions = lsblk   
 
 Secure Shell (SSH)  
+
 Protocol de com securise  
+
 UFW = Uncomplicated Firewal  
 (interface simplifiee pour gere le firewall)  
 Apparmor = Module de securite de Linux  
