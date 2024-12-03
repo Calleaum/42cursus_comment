@@ -11,10 +11,10 @@ Protocol de com securise
 
 :bulb:Cron utilitaire pour executer des commandes dans des temps specifique   
 
-		:bulb: Partitions:white_check_mark:
+		Partitions
 :bulb:lsblk
 
-		:white_check_mark:Commandes UFW:white_check_mark:
+		Commandes UFW
 :bulb:sudo ufw status  
 check des ports ouvert ou ferme
 
@@ -24,7 +24,7 @@ ouvrir un port
 :bulb:sudo ufw delete allow "XXXX"  
 fermer un port
 
-		:white_check_mark:Commandes SSH:white_check_mark:
+		Commandes SSH
 :bulb:sudo systemctl status ssh  
 infos sur SSH  
 
@@ -34,17 +34,17 @@ recherche Ligne port dans sshd_config
 :bulb:sudo systemctl restart sshd              
 Restart ssh pour prendre une nouvelle config  
 
-		:white_check_mark:Connection distance:white_check_mark:
+		Connection distance
 :bulb:ssh calleaum42@ hostname -I -p 4242  
 
-		:white_check_mark:Hostname:white_check_mark:
+		Hostname
 :bulb:sudo hostnamectl set-hostname new_user  
 change hostname  
 
 :bulb:sudo nano /etc/hostname  et /etc/hosts  
 Possibilite de changer manuellement  
 		
-		:white_check_mark:Monitoring:white_check_mark:
+		Monitoring
 :bulb:nano /usr/local/bin/monitoring.sh  
 modifier script  
 
@@ -56,7 +56,7 @@ Duree de reload script
 
 
 
-		:white_check_mark:Groupe:white_check_mark:
+		Groupe
 :bulb:sudo adduser "user"  
 add user  
 
@@ -73,14 +73,14 @@ del un user d'un groupe
 verif les user du groupe  
 
 
-		:white_check_mark:mot de passe:white_check_mark:
+		mot de passe
 :bulb:sudo chage -l "user"  
 verif temps restant mdp  
 
 :bulb:sudo nano /etc/pam.d/common-password  
 regles mdp  
 
-		:white_check_mark:sudo:white_check_mark:
+		sudo
 :bulb:dpkg -l | grep sudo  
 info version sudo  
 
