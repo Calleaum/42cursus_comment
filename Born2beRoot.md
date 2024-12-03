@@ -1,6 +1,5 @@
-:warning: Texte important
 Partitions = lsblk   
-
+<span style="color: crimson;">Texte en rouge</span>
 Secure Shell (SSH)  
 Protocol de com securise  
 
