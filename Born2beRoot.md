@@ -1,4 +1,4 @@
-<span style="color: red;">I am red</span>
+<font color="red">Texte en rouge</font>
 Partitions = lsblk   
 
 Secure Shell (SSH)  
