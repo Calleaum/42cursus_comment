@@ -1,14 +1,16 @@
 Partitions = lsblk   
 
 Secure Shell (SSH)  
-
 Protocol de com securise  
 
 UFW = Uncomplicated Firewal  
 (interface simplifiee pour gere le firewall)  
+
 Apparmor = Module de securite de Linux  
 (Chaque processus peut avoir son profil de secu)  
+
 lvm = Gestionnaire de volume physique  
+
 Cron utilitaire pour executer des commandes dans des temps specifique   
 
 		Partitions :
