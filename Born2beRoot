@@ -1,45 +1,58 @@
-lsblk 
-Secure Shell (SSH)
-ufw Uncomplicated Firewall interface simplifiée pour gérer les règles de pare-feu 
-debian est un système d'exploitation libre
-AppArmor est un Système de sécurité Linux qui est déjà inclu dans debian 
-lvm est un gestionnaire de volumes logiques
+Partitions = lsblk 
 
-Sudo hostname "new name"
-se deconnecter : logout
+Secure Shell (SSH) = Protocol de com securise
+UFW = Uncomplicated Firewal (interface simplifiee pour gere le firewall)
+Apparmor = Module de securite de Linux (Chaque processus peut avoir son profil de secu)
+lvm = Gestionnaire de volume physique
+Cron utilitaire pour executer des commandes dans des temps specifique 
 
-nano /usr/local/bin/monitoring.sh
-sudo crontab -u root -e
-cron est un utilitaire qui permet d'executer des commandes a des temps specifique 
+		Partitions :
+lsblk
 
-sudo ufw status
-sudo ufw allow 4242
-sudo ufw delete allow 42422
+		Commandes UFW :
+sudo ufw status				check des ports ouvert ou ferme
+sudo ufw allow "XXXX"			ouvrir un port
+sudo ufw delete allow "XXXX"		fermer un port
 
-sudo systemctl status ssh
-sudo grep Port /etc/ssh/sshd_config
-ssh lsellier@ hostname -I -p 4242
-sudo systemctl restart ss
+		Commandes SSH :
+sudo systemctl status ssh		infos sur SSH
+sudo grep Port /etc/ssh/sshd_config	recherche Ligne port dans sshd_config
+sudo systemctl restart sshd             Restart ssh pour prendre une nouvelle config
 
-getent group sudo
-getent group user42
+		Connection distance:
+ssh calleaum42@ hostname -I -p 4242
 
-sudo adduser jsp
-sudo groupadd supercorrecteur
-sudo getent group supercorrecteur
-groups jsp 
-sudo usermod -aG supercorrecteur jsp
-sudo deluser jsp supercorrecteur
+		Chemin acces :	
+		Hostname :
+sudo hostnamectl set-hostname new_user	change hostname
+sudo nano /etc/hostname  et /etc/hosts	Possibilite de changer manuellement
+		
+		Monitoring :
+nano /usr/local/bin/monitoring.sh 	modifier script
+sh   /usr/local/bin/monitoring.sh 	afficher script
+sudo crontab -u root -e 		Duree de reload script
 
-sudo chage -l jsp
-sudo nano /etc/login.defs
-sudo nano /etc/pam.d/common-password
 
-hostnamectl 
-sudo hostnamectl set-hostname connard42
-sudo nano /etc/hosts
 
-dpkg -l | grep sudo 
-sudo nano /var/log/sudo/sudo.log
-sudo visudo
-sudo nano /etc/sudoers
+		Groupe :
+sudo adduser "user"			add user
+sudo groupadd "group_name"		add group
+
+sudo usermod -aG "group" "user"		add user dans un groupe
+sudo deluser "user" "group"		del un user d'un groupe
+
+getent group "test"			verif les user du groupe
+
+		mot de passe :
+sudo chage -l "user"			verif temps restant mdp
+sudo nano /etc/pam.d/common-password	regles mdp
+
+		sudo :
+dpkg -l | grep sudo			info version sudo
+sudo nano /var/log/sudo/sudo.log	dossier log sudo
+sudo visudo / sudo nano /etc/sudoers	regles secu sudo
+
+
+
+
+
