@@ -1,4 +1,4 @@
-<font color="red">Texte en rouge</font>
+:warning: Texte important
 Partitions = lsblk   
 
 Secure Shell (SSH)  
