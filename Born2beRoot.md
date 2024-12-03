@@ -23,7 +23,7 @@ sudo ufw delete allow "XXXX"
 fermer un port
 
 		Commandes SSH :
-sudo systemctl status ssh	  	
+sudo systemctl status ssh  
 infos sur SSH  
 
 sudo grep Port /etc/ssh/sshd_config	  
