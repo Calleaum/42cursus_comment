@@ -10,7 +10,7 @@ Cron utilitaire pour executer des commandes dans des temps specifique
 lsblk
 
 		Commandes UFW :
-sudo ufw status				
+sudo ufw status	
 check des ports ouvert ou ferme
 
 sudo ufw allow "XXXX"			
