@@ -1,4 +1,4 @@
-Partitions = lsblk 
+#0969DAPartitions = lsblk 
 
 Secure Shell (SSH) = Protocol de com securise
 UFW = Uncomplicated Firewal (interface simplifiee pour gere le firewall)
