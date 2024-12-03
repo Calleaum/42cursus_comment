@@ -45,49 +45,49 @@ change hostname
 Possibilite de changer manuellement  
 		
 		:white_check_mark:Monitoring:white_check_mark:
-:bulb:nano /usr/local/bin/monitoring.sh   	
+:bulb:nano /usr/local/bin/monitoring.sh  
 modifier script  
 
-:bulb:sh   /usr/local/bin/monitoring.sh   	
+:bulb:sh   /usr/local/bin/monitoring.sh  
 afficher script  
 
-:bulb:sudo crontab -u root -e   		
+:bulb:sudo crontab -u root -e  
 Duree de reload script  
 
 
 
 		:white_check_mark:Groupe:white_check_mark:
-:bulb:sudo adduser "user"	  		
+:bulb:sudo adduser "user"  
 add user  
 
-:bulb:sudo groupadd "group_name"  		
+:bulb:sudo groupadd "group_name"  
 add group  
 
-:bulb:sudo usermod -aG "group" "user"  		
+:bulb:sudo usermod -aG "group" "user"  
 add user dans un groupe  
 
 :bulb:sudo deluser "user" "group"  		
 del un user d'un groupe  
 
-:bulb:getent group "test"	  		
+:bulb:getent group "test"  
 verif les user du groupe  
 
 
 		:white_check_mark:mot de passe:white_check_mark:
-:bulb:sudo chage -l "user"	  		
+:bulb:sudo chage -l "user"  
 verif temps restant mdp  
 
-:bulb:sudo nano /etc/pam.d/common-password  	
+:bulb:sudo nano /etc/pam.d/common-password  
 regles mdp  
 
 		:white_check_mark:sudo:white_check_mark:
-:bulb:dpkg -l | grep sudo  			
+:bulb:dpkg -l | grep sudo  
 info version sudo  
 
-:bulb:sudo nano /var/log/sudo/sudo.log  	
+:bulb:sudo nano /var/log/sudo/sudo.log  
 dossier log sudo  
 
-:bulb:sudo visudo / sudo nano /etc/sudoers  	
+:bulb:sudo visudo / sudo nano /etc/sudoers  
 regles secu sudo  
 
 
