@@ -11,7 +11,7 @@ Protocol de com securise
 
 :bulb:Cron utilitaire pour executer des commandes dans des temps specifique   
 
-		:white_check_mark: Partitions:white_check_mark:
+		:bulb: Partitions:white_check_mark:
 :bulb:lsblk
 
 		:white_check_mark:Commandes UFW:white_check_mark:
