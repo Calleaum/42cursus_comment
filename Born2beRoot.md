@@ -13,24 +13,24 @@ lsblk
 sudo ufw status  
 check des ports ouvert ou ferme
 
-sudo ufw allow "XXXX"			
+sudo ufw allow "XXXX"  			
 ouvrir un port
 
-sudo ufw delete allow "XXXX"
+sudo ufw delete allow "XXXX"  
 fermer un port
 
 		Commandes SSH :
-sudo systemctl status ssh		
-infos sur SSH
+sudo systemctl status ssh	  	
+infos sur SSH  
 
-sudo grep Port /etc/ssh/sshd_config	
-recherche Ligne port dans sshd_config
+sudo grep Port /etc/ssh/sshd_config	  
+recherche Ligne port dans sshd_config  
 
-sudo systemctl restart sshd            
-Restart ssh pour prendre une nouvelle config
+sudo systemctl restart sshd              
+Restart ssh pour prendre une nouvelle config  
 
 		Connection distance:
-ssh calleaum42@ hostname -I -p 4242
+ssh calleaum42@ hostname -I -p 4242  
 
 		Chemin acces :	
 		Hostname :
