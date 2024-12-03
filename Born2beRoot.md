@@ -16,7 +16,7 @@ check des ports ouvert ou ferme
 sudo ufw allow "XXXX"			
 ouvrir un port
 
-sudo ufw delete allow "XXXX"		
+sudo ufw delete allow "XXXX"
 fermer un port
 
 		Commandes SSH :
