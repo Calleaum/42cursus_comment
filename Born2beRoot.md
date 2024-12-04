@@ -49,11 +49,11 @@ Possibilite de changer manuellement
 modifier script  
 
 1 2 3 4 5 /usr/local/monitoring.sh    
-1 Jour de la semaine (0 - 7) [Dimanche = 0 ou 7]  
-2 Mois (1 - 12)  
+5 Jour de la semaine (0 - 7) [Dimanche = 0 ou 7]  
+4 Mois (1 - 12)  
 3 Jour du mois (1 - 31)  
-4 Heure (0 - 23)  
-5 Minute (0 - 59)  
+2 Heure (0 - 23)  
+1 Minute (0 - 59)  
 
 :bulb:sh   /usr/local/bin/monitoring.sh  
 afficher script  
