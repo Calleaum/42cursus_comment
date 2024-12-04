@@ -48,6 +48,14 @@ Possibilite de changer manuellement
 :bulb:nano /usr/local/bin/monitoring.sh  
 modifier script  
 
+* * * * * /usr/local/monitoring.sh  
+│ │ │ │ │  
+│ │ │ │ └── Jour de la semaine (0 - 7) [Dimanche = 0 ou 7]  
+│ │ │ └──── Mois (1 - 12)  
+│ │ └───── Jour du mois (1 - 31)  
+│ └────── Heure (0 - 23)  
+└─────── Minute (0 - 59)  
+
 :bulb:sh   /usr/local/bin/monitoring.sh  
 afficher script  
 
